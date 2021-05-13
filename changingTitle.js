@@ -8,5 +8,5 @@ function getWidth() {
     )
 }
 if(getWidth()<500){
-    document.title = `Mobile edition`;
+    document.title = `Sketch Cloud - Mobile`;
 }
