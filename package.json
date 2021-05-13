@@ -1,0 +1,25 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Template site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikizhelqzkov/WORK_ZONE.git"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "Nikolay Zhelyazkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikizhelqzkov/WORK_ZONE/issues"
+  },
+  "homepage": "https://github.com/nikizhelqzkov/WORK_ZONE#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0"
+  }
+}
