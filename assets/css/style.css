@@ -42,6 +42,7 @@
 
 .btn-rounded:hover {
   color: #ffffff;
+  background-color: red;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
   opacity: 40%;
@@ -88,7 +89,7 @@
 
 .left-header {
   margin-top: 180px;
-  padding-left: 40px;
+  padding-left: 0px;
 }
 
 .left-header-inner h1 {
@@ -223,5 +224,37 @@ footer .footer .footer-logo {
 footer .footer .social-logos a {
   display: inline-block;
   margin-right: 10px;
+}
+
+footer .footer .footer-links a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 15;
+  line-height: 1.733;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+footer .footer .footer-links a:hover {
+  color: #30c88f;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+footer .footer .footer-links li {
+  margin-bottom: 10px;
+}
+
+.btn-r {
+  border-radius: 22px;
+  margin-bottom: 30px;
+}
+
+.copyright-zone {
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 15;
+  font-weight: 400;
+  line-height: 1.733;
 }
 /*# sourceMappingURL=style.css.map */
