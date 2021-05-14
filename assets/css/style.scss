@@ -1,28 +1,30 @@
 $base-white:#FFFFFF;
 $base-grey-color:#9597A5;
 $primary-color:#2D314D;
-$gradient-color:linear-gradient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 100%); 
+$gradient-color:linear-gradient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 100%);
+$p-line-height:1.556;
+
 *{
     font-family: Public Sans;
     box-sizing: border-box;
 }
-
-.custom-nav li:nth-last-child(){
-    margin-right: 30px;
+.custom-nav{
+    li:nth-last-child(){
+        margin-right: 30px;
+    }
+    li a{
+        font-weight: 400;
+        color: $base-grey-color;
+        font-size: 16px;
+    }
+    li a:hover{
+        color: $primary-color;
+        border-bottom: 4px solid;
+        border-image-slice: 1;
+        border-image-source:$gradient-color;
+        transition: border-bottom 0.1s ease-in-out;
+    }
 }
-.custom-nav li a{
-    font-weight: 400;
-    color: $base-grey-color;
-    font-size: 16px;
-}
-.custom-nav li a:hover{
-    color: $primary-color;
-    border-bottom: 4px solid rgb(51,211,94);
-    border-image-slice: 1;
-    border-image-source:linear-gradient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 100%);
-    transition: border-bottom 0.1s ease-in-out;
-}
-
 .custom-header{
     padding:40px;
 }
@@ -30,7 +32,6 @@ $gradient-color:linear-gradient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 
     width: 100%;
     overflow: hidden;
     padding: 8px 33px;
-    background: rgb(51,211,94);
     background: $gradient-color;
     color: $base-white;
     border-radius: 22px;
@@ -55,16 +56,31 @@ $gradient-color:linear-gradient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 
 #mockup{
     position: absolute;
     clip-path: inset(14% 16% 0% 0%);
-    transform:translateY(-130px) translateX(114px);
+    transform:translateY(-130px) translateX(100px);
+}
+@media only screen and (max-width: 1399px){
+
+    #mockup{
+        position: absolute;
+        clip-path: inset(14% 22% 0% 0%);
+        transform:translateY(-130px) translateX(40px);
+    }
+}
+@media only screen and (max-width: 1201px){
+
+    #mockup{
+        
+        position: absolute;
+        clip-path: inset(14% 33% 0% 0%);
+        transform:translateY(-130px) translateX(-24px);
+    }
 }
 .left-header{
     margin-top: 180px;
     padding-left: 40px;
 }
-.left-header-inner{
-   
+.left-header-inner{  
     h1{
-        font-size: 56px;
         line-height: 1.143;
         color: $primary-color;
         font-weight: 100;
@@ -72,7 +88,48 @@ $gradient-color:linear-gradient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 
     p{
         font-size: 18px;
         font-weight: 400;
-        line-height: 1.556;
+        line-height: $p-line-height;
         color: $base-grey-color;
+    }
+}
+.main{
+    padding-top: 96px;
+    background-color: #F4F5F7;
+    width: 100%;
+    .main-header{
+        h2{
+            line-height: 1.6;
+            font-weight: 100;
+            color: $primary-color;
+            margin-left: 8px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: $p-line-height;
+            color: $base-grey-color;
+            margin-left: 8px;
+        }
+    }
+    .main-card{
+        background: transparent;
+        border: 0;
+        margin-top: 80px;
+        img{
+            width: 72px;
+            height: 72px;
+            margin-left: 8px;
+        }
+        h4{
+            background: transparent;
+            border: 0;
+            padding:8px 0;
+        }
+        p{
+            font-size: 16px;
+            color: $base-grey-color;
+            font-weight: 400;
+            line-height: 1.625
+        }
     }
 }

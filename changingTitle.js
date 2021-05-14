@@ -7,6 +7,7 @@ function getWidth() {
         document.documentElement.clientWidth
     )
 }
+console.log(getWidth());
 if(getWidth()<500){
     document.title = `Sketch Cloud - Mobile`;
 }
