@@ -10,12 +10,12 @@
 
 .custom-nav li a {
   font-weight: 400;
-  color: #9597A5;
+  color: #9597a5;
   font-size: 16px;
 }
 
 .custom-nav li a:hover {
-  color: #2D314D;
+  color: #2d314d;
   border-bottom: 4px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg, #33d35e 0%, #2ab6d9 100%);
@@ -33,7 +33,7 @@
   padding: 8px 33px;
   background: -webkit-gradient(linear, left top, right top, from(#33d35e), to(#2ab6d9));
   background: linear-gradient(90deg, #33d35e 0%, #2ab6d9 100%);
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 22px;
   font-size: 14px;
   line-height: 2;
@@ -41,14 +41,14 @@
 }
 
 .btn-rounded:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
   opacity: 40%;
 }
 
 .header {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .right-header {
@@ -93,7 +93,7 @@
 
 .left-header-inner h1 {
   line-height: 1.143;
-  color: #2D314D;
+  color: #2d314d;
   font-weight: 100;
 }
 
@@ -101,12 +101,12 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.556;
-  color: #9597A5;
+  color: #9597a5;
 }
 
 .main {
   padding-top: 96px;
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
   width: 100%;
   padding-bottom: 100px;
 }
@@ -114,7 +114,7 @@
 .main .main-header h2 {
   line-height: 1.6;
   font-weight: 100;
-  color: #2D314D;
+  color: #2d314d;
   margin-left: 8px;
 }
 
@@ -122,7 +122,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.556;
-  color: #9597A5;
+  color: #9597a5;
   margin-left: 8px;
 }
 
@@ -146,14 +146,15 @@
 
 .main .main-card p {
   font-size: 16px;
-  color: #9597A5;
+  color: #9597a5;
   font-weight: 400;
   line-height: 1.625;
 }
 
 .article {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .article h2 {
@@ -174,7 +175,7 @@
 .article .main-card .author {
   font-size: 10px;
   font-weight: 400;
-  color: #9597A5;
+  color: #9597a5;
   line-height: 1.8;
   margin-top: 10px;
 }
@@ -189,13 +190,13 @@
 .article .main-card h4 a {
   text-decoration: none;
   display: inline-block;
-  color: #2D314D;
+  color: #2d314d;
   line-height: 1.25;
   font-weight: 100;
 }
 
 .article .main-card h4 a:hover {
-  color: #30C88F;
+  color: #30c88f;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
@@ -204,6 +205,23 @@
   line-height: 1.385;
   font-size: 13px;
   font-weight: 400;
-  color: #9597A5;
+  color: #9597a5;
+}
+
+footer {
+  background-color: #2d314d;
+}
+
+footer .footer {
+  padding: 50px 0;
+}
+
+footer .footer .footer-logo {
+  margin-bottom: 50px;
+}
+
+footer .footer .social-logos a {
+  display: inline-block;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
