@@ -44,16 +44,16 @@
 
 .left-header {
   margin-top: 50px;
-  padding: 20px 50px  90px;
+  padding: 20px 50px 90px;
 }
 
 .left-header .left-header-inner {
   margin: auto;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 400px) {
   #mockup {
-    width: 85%;
+    width: 80%;
     margin-left: 8%;
   }
 }
@@ -71,6 +71,27 @@
   }
 }
 
+@media only screen and (min-width: 750px) {
+  #mockup {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  #mockup {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #mockup {
+    width: 55%;
+    margin-left: 25%;
+  }
+}
+
 .main-header {
   padding: 0 50px;
 }
@@ -78,5 +99,39 @@
 .main-card {
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 50px;
+  margin-top: 10px;
+}
+
+.article {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+footer .footer {
+  padding: 50px 0;
+}
+
+footer .footer .footer-logo {
+  margin-bottom: 20px;
+}
+
+footer .social-logos {
+  margin-bottom: 30px;
+}
+
+footer .social-logos img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+footer .footer-links {
+  margin-bottom: 0;
+}
+
+footer .btn-r {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style-min.css.map */

@@ -61,8 +61,8 @@
 
 #mockup {
   position: absolute;
-  -webkit-clip-path: inset(14% 16% 0% 0%);
-          clip-path: inset(14% 16% 0% 0%);
+  -webkit-clip-path: inset(14% 14.2% 0% 0%);
+          clip-path: inset(14% 14.2% 0% 0%);
   -webkit-transform: translateY(-130px) translateX(100px);
           transform: translateY(-130px) translateX(100px);
 }
@@ -70,18 +70,18 @@
 @media only screen and (max-width: 1399px) {
   #mockup {
     position: absolute;
-    -webkit-clip-path: inset(14% 22% 0% 0%);
-            clip-path: inset(14% 22% 0% 0%);
+    -webkit-clip-path: inset(14% 20% 0% 0%);
+            clip-path: inset(14% 20% 0% 0%);
     -webkit-transform: translateY(-130px) translateX(40px);
             transform: translateY(-130px) translateX(40px);
   }
 }
 
-@media only screen and (max-width: 1201px) {
+@media only screen and (max-width: 1199px) {
   #mockup {
     position: absolute;
-    -webkit-clip-path: inset(14% 33% 0% 0%);
-            clip-path: inset(14% 33% 0% 0%);
+    -webkit-clip-path: inset(14% 25.5% 0% 0%);
+            clip-path: inset(14% 25.5% 0% 0%);
     -webkit-transform: translateY(-130px) translateX(-24px);
             transform: translateY(-130px) translateX(-24px);
   }
@@ -96,6 +96,7 @@
   line-height: 1.143;
   color: #2d314d;
   font-weight: 100;
+  margin-bottom: 20px;
 }
 
 .left-header-inner p {
@@ -160,7 +161,7 @@
 
 .article h2 {
   padding: 40px 0;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .article .main-card {
@@ -261,5 +262,11 @@ footer .footer .footer-links li {
 .navbar-toggler.collapsed > .close,
 .navbar-toggler:not(.collapsed) > .navbar-toggler-image {
   display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .btn-r, .copyright-zone, .social-logos {
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
