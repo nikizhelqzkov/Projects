@@ -17,6 +17,5 @@ const offHover = (element) => {
     src = src.slice(0, src.length - 10);
     src+=".svg";
     element.src = src;
-
   }
 };

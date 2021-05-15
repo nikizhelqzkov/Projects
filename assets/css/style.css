@@ -257,4 +257,9 @@ footer .footer .footer-links li {
   font-weight: 400;
   line-height: 1.733;
 }
+
+.navbar-toggler.collapsed > .close,
+.navbar-toggler:not(.collapsed) > .navbar-toggler-image {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

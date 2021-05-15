@@ -1,0 +1,82 @@
+.navbar-toggler > .close {
+  display: inline;
+}
+
+.navbar-nav-mobile {
+  background-color: transparent;
+}
+
+.navbar-nav-mobile ul {
+  margin: 30px auto;
+  display: block;
+  width: 80%;
+}
+
+.navbar-nav-mobile ul a {
+  color: #2d314d;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.right-header {
+  background-image: url("../../images/bg-intro-desktop.svg");
+  position: relative;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mockup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  -webkit-clip-path: inset(20% 0% 0% 0%);
+          clip-path: inset(20% 0% 0% 0%);
+  -webkit-transform: translateY(-20%) translateX(0);
+          transform: translateY(-20%) translateX(0);
+  width: 100%;
+}
+
+.left-header {
+  margin-top: 50px;
+  padding: 20px 50px  90px;
+}
+
+.left-header .left-header-inner {
+  margin: auto;
+}
+
+@media only screen and (min-width: 420px) {
+  #mockup {
+    width: 85%;
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #mockup {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  #mockup {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+.main-header {
+  padding: 0 50px;
+}
+
+.main-card {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/*# sourceMappingURL=style-min.css.map */
