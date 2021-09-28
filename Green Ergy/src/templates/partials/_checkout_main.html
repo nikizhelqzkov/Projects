@@ -1,0 +1,223 @@
+<section class="checkout">
+    <h2>Check Out</h2>
+
+    <div class="form">
+        <form method="POST" id="checkout--first__form" class="form__main">
+            <span class="number active">
+                <p>1</p>
+            </span>
+            <span class="line active"></span>
+
+            <div class="row form__main__header">
+                <h3 class="col-12 col-md-6">Persönliche Daten</h3>
+            </div>
+            <!-- Za selectite polzvame dropdown menu s slideTogle() na Jquery -->
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <select required class="col-12 input" name="anrede" id="anrede">
+                        <option value="" disabled selected hidden>Anrede*</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6">
+                    <select required class="col-12 input" name="titel" id="titel">
+                        <option value="" disabled selected hidden>Titel</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <label for="vorname">Vorname*</label>
+                    <br />
+                    <input class="input" id="vorname" name="vorname" type="text" required />
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="nachname">Nachname*</label>
+                    <br />
+                    <input id="nachname" class="input" type="text" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="email">E-Mail*</label>
+                    <br />
+                    <input id="email" class="input" type="text" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="telefon">Telefon*</label>
+                    <br />
+                    <input id="telefon" class="input" type="tel" pattern="[0-9]{10}" reqired />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <div class="info__text">
+                        <p>
+                            <span>
+                                <img src="../../assets/images/np_info_2394143_000000.svg" alt="Info logo" />
+                            </span>
+                            Die Telefonnumer hilft uns, Sie bei Rückfragen zu kontaktieren.
+                        </p>
+                        <p id="pflichtfeld">* Pflichtfeld</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="input-group">
+                        <input
+                            class="form-control border-right-0 border"
+                            type="text"
+                            placeholder="Geburtsdatum*"
+                            onfocus="(this.type='date')"
+                            onfocusout="(this.type='text')"
+                            value=""
+                            id="date"
+                            required
+                        />
+                        <button class="btn btn-light border-left-0 border bg-white">
+                            <img src="../../assets/images/np_calendar_935779_000000.svg" alt="Calendar logo" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="info__text col-12">
+                    <h3>Zweiter Vertragspartner</h3>
+                    <h5>Wollen Sie zu Ihren Vertrag einen weiteren Vertragspartner hinzufügen?</h5>
+                    <p>
+                        <span>
+                            <img src="../../assets/images/np_info_2394143_000000.svg" alt="Info logo" />
+                        </span>
+                        Sie können Ihren Vertrag auch auf zwei Personen (zum Beispiel auf Ehepartner/in, Mitbewohner/in,
+                        ein-tragen lassen.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6" id="check__container">
+                    <input id="vertragspartner" type="checkbox" name="vertragspartner" />
+                    <label id="check__label" for="vertragspartner">Vertragspartner hinzufügen</label>
+                </div>
+            </div>
+            <div class="row">
+                <span class="button--weiter offset-10 col-2">
+                    <button type="submit" id="Weiter">Weiter</button>
+                </span>
+            </div>
+        </form>
+        <!-- When form is finished then it will open that field down -->
+        <section id="checkout__finish--first" class="checkout__finish--first container"></section>
+        <div id="second__form" class="row form__input">
+            <span class="number">
+                <p>2</p>
+            </span>
+            <span class="line"></span>
+            <div class="col-12">
+                <input class="input input__rows" placeholder="Lieferadresse" type="text" />
+            </div>
+        </div>
+        <form method="POST" id="checkout--second__form" class="form__main">
+            <span class="number active">
+                <p>2</p>
+            </span>
+            <span class="line active"></span>
+            <div class="row form__mainheader">
+                <h3 class="col-12 col-md-6">Lieferadresse</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <label for="straße">Straße*</label>
+                    <br />
+                    <input class="input" id="straße" name="straße" type="text" required />
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="nummer">Nummer*</label>
+                    <br />
+                    <input id="nummer" class="input" type="text" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="zusatz">Zusatz</label>
+                    <br />
+                    <input id="zusatz" class="input" type="text" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <label for="postleitzahl">Postleitzahl*</label>
+                    <br />
+                    <input class="input" id="postleitzahl" name="postleitzahl" type="text" required />
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="ort">Ort*</label>
+                    <br />
+                    <input id="ort" class="input" type="text" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <div class="info__text">
+                        <p id="pflichtfeld">* Pflichtfeld</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="check__container--hidden">
+                    <input id="vertragspartner" class="" type="checkbox" name="vertragspartner" />
+                    <label id="check__label--hidden" for="vertragspartner">Alternative Rechnungsadresse hinzufügen hinzufügen</label>
+                </div>
+            </div>
+            <div class="row">
+                <span class="button--weiter offset-10 col-2">
+                    <button type="submit" id="Weiter">Weiter</button>
+                </span>
+            </div>
+        </form>
+        <div class="row form__input">
+            <span class="number">
+                <p>3</p>
+            </span>
+            <span class="line"></span>
+            <div class="col-12">
+                <input class="input input__rows" placeholder="Wechselinformationen" type="text" />
+            </div>
+        </div>
+        <div class="row form__input">
+            <span class="number">
+                <p>4</p>
+            </span>
+            <span class="line"></span>
+            <div class="col-12">
+                <input class="input input__rows" placeholder="Zahlungsinformationen" type="text" />
+            </div>
+        </div>
+        <div class="row form__input">
+            <span class="number">
+                <p>5</p>
+            </span>
+            <span class="line"></span>
+            <div class="col-12">
+                <input class="input input__rows" placeholder="Allgemeine Geschäftsbedingungen" type="text" />
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <span class="button--form"><button>Jetzt verbindlich bestellen</button></span>
+        </div>
+        <div class="row d-flex d-md-none justify-content-center bottom__text--mobile">
+            <a href="#">Antrag herunterladen</a>
+        </div>
+    </div>
+    <div class="square-bee square-bee--small" id="square-bee--small--top"></div>
+    <div class="square-bee square-bee--middle"></div>
+
+    <div class="square-bee square-bee--small" id="square-bee--small--bottom"></div>
+</section>

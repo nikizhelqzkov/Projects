@@ -1,0 +1,82 @@
+.mission {
+    margin: 0 0 0.9px;
+    padding: 114px 186px 120.5px 104px;
+    object-fit: contain;
+    // opacity: 0.6;
+    height: 543.5px;
+    // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    //     url('../../assets/images/joey-kyber-sFLVTqNzG2I-unsplash.png');
+    background: url('../../assets/images/joey-kyber-sFLVTqNzG2I-unsplash.png');
+    h3,
+    p,
+    &__btn {
+        color: #ffffff;
+        letter-spacing: normal;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        text-align: left;
+        opacity: 1;
+    }
+    h3 {
+        font-size: 45px;
+        line-height: 1.22;
+    }
+    p {
+        line-height: 1.27;
+        font-size: 22px;
+        margin-top: 40px;
+    }
+    &__btn {
+        background-color: #ffee00;
+        display: inline-block;
+        margin-top: 60px;
+        padding: 13px 25px 13px 30px;
+        border-radius: 5px;
+        a {
+            width: 100%;
+            display: inline-block;
+            font-size: 18px;
+            line-height: 1.39;
+            color: #3c3c3b;
+            text-decoration: none;
+        }
+    }
+    &__btn:hover{
+        background-color: #ffce00;
+    }
+}
+@media (max-width: 760px) {
+    .mission {
+        padding: 0;
+        padding-left: 16px;
+        padding-top: 80px;
+        h3 {
+            font-size: 30px;
+            margin-bottom: 0;
+            font-weight: 500;
+
+            line-height: 1.1;
+        }
+        p {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        &__btn {
+            background-color: #ffee00;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 13px 25px 13px 30px;
+           
+        }
+    }
+}
+
+@media (min-width: 1140px) {
+    .mission {
+        width: 1140px;
+        margin: auto;
+
+       
+    }
+}

@@ -1,0 +1,131 @@
+.footer {
+    background-color: #3c3c3b;
+    padding-bottom: 100px;
+    color: #ffffff;
+    position: relative;
+    h3 {
+        margin: auto;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.39;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    &__header {
+        margin-top: 58px;
+        h3 {
+            margin-top: 58px;
+        }
+    }
+    &__text {
+        margin-top: 60px;
+    }
+    &__socials {
+        display: flex;
+        margin: auto;
+        margin-top: 35px;
+        li {
+            display: flex;
+            margin-right: 28.3px;
+        }
+    }
+    &__nav {
+        display: flex;
+        margin: auto;
+        margin-top: 65px;
+        li {
+            display: flex;
+            margin-right: 20px;
+            font-size: 13px;
+            line-height: 1.31;
+        }
+        &__copyright {
+            margin-top: 1px;
+            h4 {
+                margin: auto;
+                text-align: center;
+                font-size: 13px;
+                line-height: 1.31;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        margin: auto;
+        margin-top: 35px;
+        li {
+            display: flex;
+        }
+        img {
+            margin: auto;
+        }
+    }
+    &__logo {
+        margin: auto;
+        margin-top: 63px;
+        img {
+            width: 190px;
+            height: 110px;
+            margin: auto;
+        }
+        &__text {
+            margin-top: 1px;
+            h4 {
+                margin: auto;
+                text-align: center;
+                font-size: 13px;
+                line-height: 1.31;
+            }
+        }
+    }
+
+    .icon {
+        width: 27px;
+        height: 27px;
+        &--light {
+            background-color: #ffff;
+            border-radius: 2px;
+            padding: 1.3px 1.3px 1.3px 1.3px;
+        }
+    }
+    .message {
+        display: inline-block;
+        position: absolute;
+        padding: 17px 15px 60px 15px;
+        width: 80px;
+        height: 50px;
+        background-color: #2fac66;
+        bottom: 88px;
+        right: 16px;
+        border-radius: 50%;
+        img {
+            display: block;
+            object-fit: contain;
+            margin: auto;
+        }
+    }
+    @media (max-width: 768px) {
+        .footer {
+            &__nav {
+                padding-left: 0;
+                display: block;
+                li {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 13px;
+                }
+                &__copyright {
+                    margin-top: 65px;
+                    
+                    
+                }
+            }
+        }
+        .message {
+            display: none;
+        }
+    }
+}

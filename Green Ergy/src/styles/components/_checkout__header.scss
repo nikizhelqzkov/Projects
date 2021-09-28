@@ -1,0 +1,98 @@
+#checkout {
+    border-top: solid 2px var(--jade-green);
+}
+.header {
+    position: relative;
+    &__heading {
+        display: flex;
+        margin-top: 57px;
+        justify-content: center;
+        h2 {
+            font-size: 30px;
+
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.1;
+            letter-spacing: normal;
+            text-align: center;
+            color: #3c3c3b;
+        }
+        &--sub {
+            display: flex;
+            justify-content: center;
+            h4 {
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 1.31;
+                color: #3c3c3b;
+            }
+        }
+    }
+    .nav__items {
+        display: block;
+    }
+    &__price {
+        display: flex;
+        justify-content: center;
+        margin-top: 37px;
+
+        &__info {
+            margin-left: 30px;
+            margin-right: 30px;
+            line-height: 1.31;
+            h4,
+            p {
+                font-size: 13px;
+                color: #3c3c3b;
+            }
+            h4 {
+                font-weight: bold;
+            }
+        }
+        &__logo {
+            width: 20.6px;
+            height: 34.9px;
+        }
+    }
+}
+.bee {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+#checkout__header__nav {
+    display: none;
+}
+@media (max-width: 760px) {
+    .header {
+        border-top: 0;
+        &__price {
+            &__logo {
+                margin-left: -10%;
+                margin-bottom: -7%;
+            }
+            &__block {
+                width: 100%;
+                margin-left: 15%;
+                margin-right: 20%;
+            }
+
+            #visible {
+                margin-top: -35px;
+                margin-left: 29px;
+                display: inline-block;
+            }
+        }
+        .nav__tems {
+            display: none;
+        }
+    }
+    #checkout__header__nav {
+        cursor: pointer;
+        display: inline-block;
+    }
+    .bee {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+.special {
+    color: #3c3c3b;
+    text-align: center;
+    padding-left: 10.5px;
+    padding-right: 10.5px;
+    margin-bottom: 91px;
+    &__header {
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-left: 61.5px;
+            margin-right: 61.5px;
+            margin-top: 85px;
+        }
+    }
+    &__text {
+        p {
+            font-size: 18px;
+            line-height: 1.39;
+        }
+    }
+}

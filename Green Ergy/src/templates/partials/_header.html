@@ -1,0 +1,204 @@
+<header class="header">
+    <form class="form__reservation--top">
+        <div class="row">
+            <div class="col-2 form__reservation--top__header">
+                <h2>Strom</h2>
+            </div>
+            <div class="col-3">
+                <label for="fInput--top">Postleitzahl</label>
+                <br />
+                <input type="text" id="fInput--top" placeholder="Postleitzahl" />
+            </div>
+            <div class="col-3 header__main__reservation__form__cols">
+                <label for="sInput-1--top">Personen im Haushalt</label>
+                <br />
+                <input type="radio" id="sInput-1--top" name="sInput" checked />
+                <label for="sInput-1--top">
+                    <img class="radio__logo" src="../../assets/images/np_person_2038479_000000.png" alt="Person logo" />
+                    1
+                </label>
+                <input type="radio" id="sInput-2--top" name="sInput" />
+                <label for="sInput-2--top">
+                    <img src="../../assets/images/np_person_2038479_000000.png" alt="Person logo" class="radio__logo" />
+                    2
+                </label>
+                <input type="radio" id="sInput-3--top" name="sInput" />
+                <label for="sInput-3--top">
+                    <img src="../../assets/images/np_person_2038479_000000.png" alt="Person logo" class="radio__logo" />
+                    3
+                </label>
+                <input type="radio" id="sInput-4--top" name="sInput" />
+                <label for="sInput-4--top">
+                    <img src="../../assets/images/np_person_2038479_000000.png" alt="Person logo" class="radio__logo" />
+                    4
+                </label>
+                <input type="radio" id="sInput-5--top" name="sInput" />
+                <label for="sInput-5--top">
+                    <img src="../../assets/images/np_person_2038479_000000.png" alt="Person logo" class="radio__logo" />
+                    5+
+                </label>
+            </div>
+            <div class="col-3">
+                <label for="tInput--top">Jahresverbrauch in kWh</label>
+                <br />
+                <input
+                    type="text"
+                    id="tInput--top"
+                    placeholder="Jahresverbrauch in
+                kWh"
+                />
+            </div>
+            <div class="col-1 form__reservation--top__button">
+                <span data-bs-toggle="modal" data-bs-target="#res-modal">
+                    <a href="#">Weiter</a>
+                </span>
+            </div>
+        </div>
+    </form>
+
+    <div class="header">
+        {{> _navigation }}
+        <div class="header__main">
+            <div class="container">
+                <div class="header__main__text">
+                    <h2>Günstig guter Strom.</h2>
+                    <p>
+                        Nachhaltiger Lebensstil – auch dort, wo es keiner sieht. Wir liefern dir sauberen Ökostrom,
+                        damit du echt nachhaltig leben kannst.
+                    </p>
+                </div>
+                <div class="header__main__reservation">
+                    <div class="badge-bonus">
+                        <div class="badge-bonus__container">
+                            <img src="../../assets/images/np_badge_799062_000000.png" alt="White badge" width="100%" />
+                            <p class="badge-bonus__price">100€ Bonus</p>
+                        </div>
+                    </div>
+                    <h3>Strom</h3>
+                    <hr id="vertical-line--big" />
+
+                    <form class="header__main__reservation__form container" action="#">
+                        <div class="row">
+                            <div id="form__col__f" class="col-12 col-md-6 col-lg-4 header__main__reservation__form__cols">
+                                <label for="fInput">Postleitzahl</label>
+                                <br />
+                                <input type="text" id="fInput" placeholder="Postleitzahl" />
+                            </div>
+                            <div class="header__main__reservation__form__cols col-12 col-md-6 col-lg-4">
+                                <label for="sInput-1">Personen im Haushalt</label>
+                                <br />
+                                <input type="radio" id="sInput-1" name="sInput" checked />
+                                <label for="sInput-1">
+                                    <img
+                                        class="radio__logo"
+                                        src="../../assets/images/np_person_2038479_000000.png"
+                                        alt="Person logo"
+                                    />
+                                    1
+                                </label>
+                                <input type="radio" id="sInput-2" name="sInput" />
+                                <label for="sInput-2">
+                                    <img
+                                        src="../../assets/images/np_person_2038479_000000.png"
+                                        alt="Person logo"
+                                        class="radio__logo"
+                                    />
+                                    2
+                                </label>
+                                <input type="radio" id="sInput-3" name="sInput" />
+                                <label for="sInput-3">
+                                    <img
+                                        src="../../assets/images/np_person_2038479_000000.png"
+                                        alt="Person logo"
+                                        class="radio__logo"
+                                    />
+                                    3
+                                </label>
+                                <input type="radio" id="sInput-4" name="sInput" />
+                                <label for="sInput-4">
+                                    <img
+                                        src="../../assets/images/np_person_2038479_000000.png"
+                                        alt="Person logo"
+                                        class="radio__logo"
+                                    />
+                                    4
+                                </label>
+                                <input type="radio" id="sInput-5" name="sInput" />
+                                <label for="sInput-5">
+                                    <img
+                                        src="../../assets/images/np_person_2038479_000000.png"
+                                        alt="Person logo"
+                                        class="radio__logo"
+                                    />
+                                    5+
+                                </label>
+                            </div>
+                            <div class="header__main__reservation__form__cols col-12 col-lg-4">
+                                <label for="tInput">Jahresverbrauch in kWh</label>
+                                <br />
+                                <input
+                                    type="text"
+                                    id="tInput"
+                                    placeholder="Jahresverbrauch in
+                                    kWh"
+                                />
+                            </div>
+                        </div>
+                        <div class="row header__main__reservation__form--bee">
+                            <span
+                                data-bs-toggle="modal"
+                                data-bs-target="#res-modal"
+                                id="header__main__res__form__button"
+                                class="header__main__reservation__form__button"
+                            >
+                                <a href="#">Jetzt Strompreis berechnen</a>
+                            </span>
+                            <img
+                                class="header__main__reservation__form--bee__logo"
+                                src="../../assets/images/beeYellow.png"
+                                alt="Bee"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div
+    class="modal fade index__modal"
+    id="res-modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="indexModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog" role="content">
+        <div class="modal-content index__modal">
+            <div class="close-modal row">
+                <span class="close" data-bs-dismiss="modal" aria-label="Close" aria-hidden="true">
+                    <img src="../../assets/images/np_close_997408_000000.svg" alt="Close button" />
+                </span>
+            </div>
+            <div class="row index__modal__header">
+                <h3 class="col-10" id="indexModalLabel">Postleitzahl nicht verfügbar</h3>
+            </div>
+            <div class="container index__modal__body">
+                <section class="index__modal__body__section">
+                    <h4 class="col-12">Entschuldigung</h4>
+                    <p class="col-12">
+                        Unser Saft reicht nicht bis zu dir. Leider ist unser Angebot in deinem Postleitzahlengebiet
+                        nicht verfügbar. Wir wollen unsere Reichweite kontinuierlich erweitern. Schau doch in ein paar
+                        Monaten nochmal vorbei.
+                    </p>
+                </section>
+            </div>
+            <div class="index__modal__footer">
+                <a href="#">Erneut versuchen</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square-bee d-none d-md-block"></div>
+<div class="square-bee square-bee--small"></div>
+<div class="square-bee square-bee--big"></div>

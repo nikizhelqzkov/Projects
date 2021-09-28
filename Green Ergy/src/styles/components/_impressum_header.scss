@@ -1,0 +1,36 @@
+.impressum__header {
+    margin-left: 15%;
+    margin-top: 100px;
+    h2 {
+        font-size: 45px;
+        line-height: 1.22;
+        color: #3c3c3b;
+    }
+    .square-bee--middle {
+        background-color: var(--jade-green);
+        bottom: 30%;
+        z-index: -3;
+        opacity: 0.5;
+        left: -8%;
+        &::before,
+        &::after {
+            background-color: var(--jade-green);
+        }
+    }
+}
+@media (max-width: 768px) {
+    .impressum__header {
+        margin-left: 9%;
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #3c3c3b;
+        }
+        .square-bee--middle {
+            display: block;
+            bottom: 59%;
+            left: -18%;
+        }
+    }
+}

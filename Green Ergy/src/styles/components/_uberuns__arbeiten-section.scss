@@ -1,0 +1,51 @@
+.uberuns__arbeien {
+    display: none;
+}
+@media (max-width: 760px) {
+    .uberuns__arbeien {
+        display: block;
+        clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+        background-color: rgba(60, 60, 59, 0.7);
+        margin-top: 60px;
+        &__header {
+            padding-top: 128px;
+            h2 {
+                font-size: 27px;
+                font-weight: 500;
+                line-height: 1.1;
+                color: #fff;
+                margin: auto;
+                text-align: center;
+            }
+        }
+        &__body {
+            margin-top: 43px;
+            padding-bottom: 100px;
+            p {
+                font-size: 22px;
+                font-weight: normal;
+                line-height: 1.27;
+                color: #fff;
+                width: 90%;
+                margin-bottom: 0;
+            }
+            &__button {
+                margin-top: 35px;
+                a {
+                    padding: 13px 30px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: normal;
+                    line-height: 1.39;
+                    color: #3c3c3b;
+                    border-radius: 5px;
+                    background-color: var(--bright-yellow);
+                }
+                a:hover {
+                    text-decoration: none;
+                    background-color: #ffce00;
+                }
+            }
+        }
+    }
+}

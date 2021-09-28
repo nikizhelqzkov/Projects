@@ -1,0 +1,54 @@
+.uberuns__header {
+    clip-path: polygon(0 0, 100% 0%, 100% 96%, 0% 100%);
+    background-color: var(--jade-green);
+    height: 600px;
+    position: relative;
+    h2 {
+        margin: auto;
+        padding-top: 94px;
+        font-size: 45px;
+        font-weight: normal;
+        line-height: 1.22;
+        text-align: center;
+        color: #fff;
+        width: 70%;
+        margin-bottom: 0;
+    }
+    p {
+        margin: auto;
+        margin-top: 54px;
+        font-size: 18px;
+        width: 65%;
+        font-weight: normal;
+        line-height: 1.39;
+        text-align: center;
+        color: #fff;
+    }
+    img {
+        position: absolute;
+        left: 2%;
+        bottom: 20%;
+    }
+}
+@media (max-width: 760px) {
+    .uberuns__header {
+        height: 1200px;
+        h2 {
+            padding-top: 70px;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 1.1;
+            width: 80%;
+        }
+        p {
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 1.27;
+            padding-bottom: 137px;
+            width: 90%;
+        }
+        img{
+            bottom: 5%;
+        }
+    }
+}

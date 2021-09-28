@@ -1,0 +1,203 @@
+.uberuns___main__yellow {
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+    height: 1700px;
+    background-color: var(--bright-yellow);
+    margin-top: -7%;
+    padding-top: 10%;
+    position: relative;
+    &__body {
+        width: 90%;
+        margin: auto;
+        margin-top: 130px;
+        &__col__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h4 {
+                font-size: 18px;
+                line-height: 1.39;
+                color: #000000;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            p {
+                margin-top: 21.5px;
+                font-size: 18px;
+                line-height: 1.39;
+                color: #3c3c3b;
+            }
+        }
+        .first__text,
+        .third__text {
+            margin-left: 83px;
+            h4,
+            p {
+                text-align: left;
+            }
+        }
+        .second__text {
+            margin-right: 69px;
+            h4,
+            p {
+                text-align: right;
+            }
+        }
+        .third__row,
+        .second__row {
+            margin-top: 100px;
+        }
+    }
+    .square-bee--big {
+        position: absolute;
+        display: block;
+        width: 140px;
+        height: 140px;
+        opacity: .7;
+        top: 8%;
+        left: 78%;
+        &::before {
+            width: 140px;
+            height: 75px;
+            bottom: 8.7rem;
+        }
+        &::after {
+            height: 140px;
+            width: 75px;
+            left: -4.7rem;
+        }
+    }
+    .square-bee--middle {
+        position: absolute;
+        display: block;
+        width: 104px;
+        height: 104px;
+        opacity: .7;
+        top: 19%;
+        left: 69%;
+        z-index: -1;
+        &::before {
+            width: 104px;
+            height: 60px;
+            bottom: 6.5rem;
+        }
+        &::after {
+            height: 104px;
+            width: 60px;
+            left: -3.7rem;
+        }
+    }
+    .square-bee--small {
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        opacity: .7;
+        bottom: 5%;
+        left: 10%;
+        z-index: -1;
+        &::before {
+            width: 50px;
+            height: 30px;
+            bottom: 3.1rem;
+        }
+        &::after {
+            height: 50px;
+            width: 30px;
+            left: -1.8rem;
+        }
+    }
+}
+@media (max-width: 760px) {
+    .uberuns___main__yellow {
+        clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0% 100%);
+        margin-top: -18%;
+        padding-top: 10%;
+        height: 2520px;
+        &__body {
+            .first__text,
+            .second__text,
+            .third__text {
+                display: flex;
+                align-items: center;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 28px;
+            }
+            .first__text,
+            .third__text {
+                h4 {
+                    margin-right: auto;
+                }
+            }
+            .second__text {
+                h4 {
+                    margin-left: auto;
+                }
+            }
+            &__col__img {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                img {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+        }
+        .square-bee--big{
+            display: block;
+            width: 73.8px;
+            height: 73.8px;
+            opacity: .7;
+            left: 75%;
+            top: 29%;
+            z-index: -1;
+            &::before{
+                width: 73.8px;
+                height: 40px;
+                bottom: 4.6rem;
+            }
+            &::after{
+                height: 73.8px;
+                width: 40px;
+                left: -2.5rem;
+            }
+        }
+        .square-bee--middle{
+            display: block;
+            width: 30px;
+            height: 30px;
+            opacity: .7;
+            left: 59%;
+            top: 31.5%;
+            z-index: -1;
+            &::before{
+                width: 30px;
+                height: 20px;
+                bottom: 1.9rem;
+            }
+            &::after{
+                height: 30px;
+                width: 20px;
+                left: -1.2rem;
+            }
+        }
+        .square-bee--small{
+            display: block;
+            width: 36.8px;
+            height: 36.8px;
+            opacity: 1;
+            left: 75%;
+            &::before{
+                width: 36.8px;
+                height: 23px;
+                bottom: 2.25rem;
+            }
+            &::after{
+                height: 36.8px;
+                width: 23px;
+                left: -1.4rem;
+            }
+        }
+    }
+}

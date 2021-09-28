@@ -1,0 +1,383 @@
+@import 'square-bee';
+.tarife__header {
+    clip-path: polygon(0 0, 100% 0%, 100% 96%, 0% 100%);
+    object-fit: contain;
+    background-color: var(--bright-yellow);
+    height: 720px;
+    position: relative;
+    &__heading,
+    &__list {
+        justify-content: center;
+    }
+    &__heading {
+        padding-top: 26px;
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.1;
+            letter-spacing: normal;
+            text-align: center;
+            color: #3c3c3b;
+        }
+    }
+    &__list {
+        margin-top: 22px;
+        &__header {
+            h4 {
+                font-size: 13px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.31;
+                letter-spacing: normal;
+                text-align: left;
+                color: #3c3c3b;
+            }
+        }
+        &__body {
+            list-style-type: none;
+            padding-left: 0;
+            li {
+                font-size: 13px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.31;
+                letter-spacing: normal;
+                text-align: left;
+                color: #3c3c3b;
+                margin-left: 17px;
+            }
+        }
+    }
+    &__main {
+        margin-top: 60px;
+        margin-left: 8%;
+        position: relative;
+        justify-content: center;
+        &__card {
+            position: relative;
+            height: 470px;
+            width: 22rem;
+            background-color: #fff;
+            &:not(:last-child) {
+                margin-right: 80px;
+            }
+            &__body {
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 97%);
+                background-color: var(--jade-green);
+                height: 92%;
+                &__heading {
+                    justify-content: center;
+                    h3 {
+                        margin-top: 38px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.39;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #ffffff;
+                        margin-bottom: 0;
+                    }
+                }
+                &__subheading {
+                    justify-content: center;
+                    h4 {
+                        font-size: 15px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.39;
+                        letter-spacing: normal;
+                        color: #ffffff;
+                        margin-bottom: 0;
+                    }
+                }
+                &__list {
+                    list-style: url('../../assets/images/np_check_1776256_000000.svg');
+                    margin: auto;
+                    margin-top: 17px;
+                    ul {
+                        margin: auto;
+                        width: 80%;
+                        li {
+                            font-size: 13px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.46;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                &__bonus {
+                    align-content: center;
+                    margin-top: 26px;
+                    flex-direction: column;
+                    h4,
+                    h5 {
+                        margin-bottom: 0;
+                        color: var(--bright-yellow);
+                        margin: auto;
+                    }
+                    h4 {
+                        line-height: 1.1;
+                        font-size: 30px;
+                    }
+                    h5 {
+                        line-height: 1.31;
+                        font-size: 13px;
+                    }
+                }
+                .empty {
+                    margin-top: 0;
+                    margin-bottom: 4.75rem;
+                }
+                &__price {
+                    margin-top: 13px;
+                    align-content: center;
+                    flex-direction: column;
+                    h4,
+                    h5 {
+                        margin-bottom: 0;
+                        color: #fff;
+                        margin: auto;
+                    }
+                    h4 {
+                        font-size: 45px;
+                        line-height: 1.22;
+                    }
+                    h5 {
+                        font-size: 13px;
+                        line-height: 1.31;
+                    }
+                }
+                &__button {
+                    margin-top: 20px;
+                    justify-content: center;
+                    a {
+                        text-decoration: none;
+                        color: #3c3c3b;
+                        display: inline-block;
+                        background-color: var(--bright-yellow);
+                        padding: 8px 30px;
+                        border-radius: 5px;
+                        border: solid 2px var(--bright-yellow);
+                    }
+                    a:hover {
+                        background-color: #ffce00;
+                        border-color: #ffce00;
+                    }
+                }
+            }
+            &__footer {
+                span {
+                    display: inline-block;
+                    font-size: 13px;
+                    line-height: 1.69;
+                    color: var(--jade-green);
+                    margin-left: 18%;
+                    cursor: pointer;
+                }
+                span:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+.tarife__modal {
+    height: 601px;
+    .close-modal {
+        justify-content: end;
+        width: 100%;
+        margin-top: 8px;
+    }
+    &__header {
+        h3 {
+            text-align: center;
+            margin: auto;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.39;
+            color: #3c3c3b;
+        }
+    }
+    &__body {
+        &__section {
+            margin-top: 32px;
+            h4 {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 1.31;
+                color: var(--jade-green);
+            }
+            p {
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 1.38;
+                color: #3c3c3b;
+            }
+        }
+    }
+    &__footer {
+        height: 30%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        a {
+            padding: 8px 30px;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.39;
+            color: #ffffff;
+            border-radius: 5px;
+            background-color: var(--jade-green);
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #258951;
+            text-decoration: none;
+        }
+    }
+}
+.yellow-bee {
+    position: absolute;
+    bottom: -8%;
+    left: -17%;
+}
+.badge-bonus {
+    position: absolute;
+    top: -14%;
+    right: -18%;
+    &__container {
+        display: block;
+        position: relative;
+        margin: auto;
+        width: 100%;
+
+        .badge-bonus__price {
+            display: inline-block;
+            position: absolute;
+            top: 35%;
+            left: 25%;
+
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: center;
+            color: #2fac66;
+
+            width: 50%;
+            transform: rotate(20deg);
+        }
+    }
+}
+.underline {
+    text-decoration: underline;
+}
+.square-bee {
+    &--middle {
+        width: 93.6px;
+        height: 93.6px;
+        left: 18%;
+        bottom: 37.5625rem;
+        opacity: 0.8;
+        z-index: -1;
+        &::after {
+            width: 42.7px;
+            height: 93.6px;
+            opacity: 0.5;
+            left: -2.6rem;
+        }
+
+        &::before {
+            width: 93.6px;
+            height: 42.7px;
+            opacity: 0.5;
+            left: 0;
+            bottom: 93.6px;
+        }
+    }
+    &--small {
+        width: 50.3px;
+        height: 50.3px;
+        opacity: 0.8;
+        bottom: 17%;
+        left: 91%;
+        &::after{
+        width: 24px;
+        height: 50.3px;
+        }
+        &::before{
+            width: 50.3px;
+            height: 24px;
+            bottom: 3.1rem;
+        }
+    }
+
+}
+@media (max-width: 760px) {
+    .tarife__header {
+        height: 1320px;
+        &__heading{
+            h2{
+              width: 90%;
+              margin: auto;
+            }
+        }
+        &__main {
+            margin-top: 60px;
+            position: relative;
+            justify-content: center;
+            margin-left: -5%;
+            &__card {
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+    }
+    .badge-bonus{
+        right: 0;
+    }
+    .yellow-bee{
+        display: none;
+    }
+    .tarife__modal{
+        &__footer{
+            height: 20%;
+        }
+    }
+    .square-bee {
+        &--small{
+            bottom: 0;
+            left: 80%;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            &::after {
+                width: 16px;
+                height: 25px;
+                left: -1rem;
+            }
+            &::before {
+                width: 25px;
+                height: 16px;
+                left: 0;
+                bottom: 1.57rem;
+            }
+        }
+    }
+}

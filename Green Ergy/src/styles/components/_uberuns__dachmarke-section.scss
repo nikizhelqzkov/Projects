@@ -1,0 +1,43 @@
+.uberuns__dachmarke {
+    margin-top: 200px;
+    &__header {
+        h2 {
+            font-size: 45px;
+            font-weight: normal;
+            line-height: 1.22;
+            color: #3c3c3b;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+    &__body {
+        margin-top: 85px;
+        .row{
+            &__first{
+
+                p {
+                    font-size: 18px;
+                    font-weight: normal;
+                    line-height: 1.39;
+                    color: #3c3c3b;
+                }
+            }
+            &__second{
+                p {
+                    font-family: SegoeUI;
+                    font-size: 20px;
+                    font-weight: normal;
+                    line-height: 1.35;
+                    color: #707070;
+                }
+
+            }
+        }
+       
+    }
+}
+@media (max-width: 760px) {
+    .uberuns__dachmarke {
+        display: none;
+    }
+}

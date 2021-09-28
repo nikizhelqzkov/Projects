@@ -1,0 +1,69 @@
+.tarife__main__strommix {
+    margin-top: 38px;
+    position: relative;
+    &__header {
+        h2 {
+            text-align: center;
+            font-size: 45px;
+            font-weight: normal;
+            color: #3c3c3b;
+            line-height: 1.22;
+            margin-bottom: 0;
+        }
+        p {
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.39;
+            color: #3c3c3b;
+            margin-top: 14px;
+        }
+    }
+    &__body {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 77px;
+        margin-bottom: 280px;
+    }
+    &__bee{
+        position: absolute;
+        top: 0;
+        left: 5%;
+    }
+}
+
+@media (max-width: 760px) {
+    .tarife__main__strommix {
+        &__header {
+            h2 {
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 1.1;
+                margin-top: 70px;
+            }
+            p {
+                width: 95%;
+                font-size: 22px;
+                margin-top: 25px;
+                font-weight: normal;
+                line-height: 1.27;
+            }
+        }
+        &__body {
+            width: 90%;
+            margin-bottom: 80px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__bee{
+            position: absolute;
+            top: -13%;
+            left: 5%;
+        }
+    }
+}

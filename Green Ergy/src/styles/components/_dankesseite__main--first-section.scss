@@ -1,0 +1,60 @@
+.dankesseite__main--first {
+    &__header {
+        margin-top: 92px;
+        h2 {
+            text-align: center;
+            font-size: 45px;
+            font-weight: normal;
+            line-height: 1.22;
+            color: #3c3c3b;
+        }
+    }
+    &__body {
+        margin-top: 60px;
+        margin-bottom: 90px;
+        &__card {
+            border: 0;
+            &__header {
+                margin: auto;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin: auto;
+                }
+            }
+            &__body {
+                p {
+                    margin-top: 60px;
+                    text-align: center;
+                    font-size: 13px;
+                    font-weight: normal;
+                    line-height: 1.31;
+                    color: #3c3c3b;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 760px) {
+    .dankesseite__main--first {
+        &__header {
+            h2 {
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+        }
+        &__body {
+            &__card {
+                margin-bottom: 60px;
+                &__body{
+                    p{
+                        margin: auto;
+                        margin-top: 38px;
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.navigation {
+    &__list {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 0;
+        padding-right: 58px;
+    }
+    &__logo {
+        width: 82px;
+        height: 56px;
+    }
+    &__link {
+        font-size: 13px;
+        line-height: 1.31;
+        color: #3c3c3b;
+        &:hover{
+            text-decoration: none;
+            color: #3c3c3b;
+            opacity: .8;
+        }    
+    }
+}
+@media (max-width: 760px) {
+    .navigation {
+        display: none;
+    }
+}

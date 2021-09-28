@@ -1,0 +1,103 @@
+._tarife__main__steps {
+    &__header {
+        justify-content: center;
+        position: relative;
+        margin-top: 200px;
+        h2,
+        p {
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            font-weight: normal;
+            color: #3c3c3b;
+            margin-bottom: 0;
+        }
+        img {
+            position: absolute;
+            bottom: -20%;
+            right: 2%;
+        }
+        h2 {
+            font-size: 45px;
+            line-height: 1.22;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.39;
+            margin-top: 31px;
+        }
+    }
+    &__body {
+        margin-top: 105px;
+        justify-content: center;
+        .card {
+            padding-left: 0;
+            padding-right: 0;
+            width: 30%;
+            &:not(:last-child) {
+                margin-right: 1.313rem;
+            }
+            &-body {
+                background-color: var(--jade-green);
+                h4 {
+                    margin-top: 8px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.39;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+            &-text {
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 1.39;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 760px) {
+    ._tarife__main__steps {
+        &__header {
+            margin-top: 100px;
+            img {
+                display: none;
+            }
+            h2 {
+                width: 75%;
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+            p {
+                width: 90%;
+                font-size: 22px;
+                font-weight: normal;
+                line-height: 1.27;
+            }
+        }
+        &__body{
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: center;
+            .card{
+                justify-content: center;
+                width: 88%;
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+                &-body{
+                    h4{
+                        margin-top: 28px;
+                    }
+                }
+                &-text{
+                    margin-bottom: 29px;
+                }
+            }
+        }
+    }
+}

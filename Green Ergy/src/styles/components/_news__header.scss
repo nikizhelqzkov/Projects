@@ -1,0 +1,87 @@
+.news__header {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    height: 600px;
+    &::before {
+        filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(110deg) saturate(600%) contrast(0.8);
+        background: url('../../assets/images/runze-shi-1kIyfRdLMxI-unsplash.png') no-repeat;
+        content: '';
+        position: absolute;
+        top: 17%;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__info {
+        flex-direction: column;
+        position: absolute;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        h2,
+        h3 {
+            font-weight: normal;
+            text-align: center;
+            color: #fff;
+        }
+        h2 {
+            font-size: 45px;
+            line-height: 1.22;
+            width: 60%;
+            margin-bottom: 27px;
+        }
+        h3 {
+            font-size: 22px;
+            line-height: 1.27;
+            width: 60%;
+        }
+    }
+    img {
+        position: absolute;
+        bottom: 35%;
+        left: 3%;
+    }
+}
+@media (min-width: 1150px) {
+    .news__header {
+        background-color: var(--jade-green);
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+        height: 600px;
+
+        &::before {
+            background-image: none;
+            filter: none;
+        }
+    }
+}
+@media (max-width: 760px) {
+    .news__header {
+        height: 600px;
+        &__info {
+            background-color: green;
+            position: relative;
+            z-index: 5;
+            height: 0px;
+            top: 45%;
+            h2 {
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 1.1;
+                width: 90%;
+            }
+            h3 {
+                font-size: 22px;
+                line-height: 1.27;
+                width: 90%;
+            }
+        }
+        img {
+            width: 80px;
+            height: 120px;
+            position: absolute;
+            top: 58%;
+        }
+    }
+}

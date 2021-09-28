@@ -1,0 +1,81 @@
+.impressum__main {
+    margin-left: 15%;
+    margin-top: 60px;
+    width: 60%;
+    h3,
+    a,
+    li,
+    p {
+        font-size: 18px;
+        line-height: 1.39;
+        text-align: left;
+        color: #3c3c3b;
+    }
+    h3 {
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    section {
+        margin-bottom: 63px;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    a {
+        color: var(--jade-green);
+        text-decoration: underline;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .impressum__main--reg,
+    .impressum__main--auf {
+        margin-bottom: 80px;
+    }
+    .impressum__square-bee--yellow {
+        bottom: 1%;
+        left: 115%;
+        background-color: var(--bright-yellow);
+        opacity: 0.4;
+        &::before,
+        &::after {
+            background-color: var(--bright-yellow);
+        }
+    }
+
+    .impressum__square-bee--green {
+        bottom: 1%;
+        left: 105%;
+        background-color: var(--jade-green);
+        opacity: 0.4;
+        &::before,
+        &::after {
+            background-color: var(--jade-green);
+        }
+        &::after {
+            left: -1.46rem;
+        }
+    }
+}
+.impressum__bee {
+    position: absolute;
+    top: 70%;
+    right: 20%;
+}
+@media (max-width: 768px) {
+    .impressum__main {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .impressum__bee {
+        height: 106px;
+        width: 80px;
+        top: 160%;
+        right: 6%;
+    }
+    .impressum__square-bee--yellow,
+    .impressum__square-bee--green {
+        display: none;
+    }
+}

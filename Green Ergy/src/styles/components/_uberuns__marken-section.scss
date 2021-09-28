@@ -1,0 +1,30 @@
+.uberuns__marken {
+    display: none;
+}
+@media (max-width: 760px) {
+    .uberuns__marken {
+        display: block;
+        background-color: var(--jade-green);
+        &__header {
+            padding-top: 56px;
+            h3 {
+                font-size: 30px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 1.1;
+                text-align: center;
+                color: #fff;
+            }
+        }
+        &__body{
+            margin-top: 58px;
+            padding-bottom: 85px;
+            justify-content: center;
+            .item{
+                display: flex;
+                margin: auto;
+                justify-content: center;
+            }
+        }
+    }
+}
