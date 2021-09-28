@@ -1,0 +1,181 @@
+body {
+    overflow-x: hidden;
+    @media(max-width:300px){
+        overflow-x: auto;
+    }
+}
+.register{
+    height: 235.5px;
+    @media(max-width:768px){
+        height: 150px !important;
+    }
+}
+.register-first__main {
+    padding: 0 11rem;
+    @media (max-width: 991px) {
+        padding: 0 5rem;
+    }
+    @media (max-width: 768px) {
+        padding: 0 3rem;
+    }
+    @media (max-width: 500px) {
+        padding: 0 2rem;
+    }
+    @media (max-width: 400px) {
+        padding: 0 1rem;
+    }
+    @media (max-width: 300px) {
+        padding: 0.5rem;
+    }
+    &__inputs--search {
+        border-radius: 6px;
+        background-color: #f4f4f4;
+        padding: 17px 0 17px 20px;
+        @media (max-width: 768px) {
+            margin-top: 5rem;
+        }
+        @media (max-width: 300px) {
+            margin-top: 8rem;
+        }
+        input {
+            width: 90%;
+            border: 0;
+            background: transparent;
+            @media (max-width: 1400px) {
+                width: 80%;
+            }
+            @media (max-width: 300px) {
+                width: 70%;
+            }
+            &:focus {
+                outline: 0;
+            }
+        }
+        input::placeholder {
+            opacity: 0.52;
+            font-family: Lato;
+            font-size: 16px;
+            color: #69666c;
+            @media (max-width: 350px) {
+                font-size: 12px;
+            }
+        }
+
+        button {
+            // width: 9%;
+            float: right;
+            margin-right: 1rem;
+        }
+    }
+    &__info {
+        margin-top: 72px;
+        @media (max-width: 300px) {
+            margin-left: -0.5rem;
+        }
+        table {
+            border-collapse: separate;
+            border-left: 0;
+            border-radius: 7px;
+            max-width: 100%;
+            border: solid 1px #e2e2e2;
+            border-spacing: 0px;
+        }
+        th,
+        td {
+            padding: 5px 4px 6px 4px;
+            text-align: center;
+            vertical-align: center;
+            border-left: 1px solid #ddd;
+            @media (max-width: 768px) {
+                padding: 2px;
+            }
+        }
+        td {
+            border-top: 1px solid #ddd;
+        }
+        td:first-child,
+        th:first-child {
+            border-left: 0;
+        }
+        tr {
+            height: 70px;
+        }
+        thead {
+            background-color: #f4f4f4;
+            th {
+                position: relative;
+                font-family: Lato;
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 1.23;
+                color: #2f2f2f;
+                padding: 16px 19px;
+                @media (max-width: 1300px) {
+                    font-size: 10px;
+                    padding: 8px 12px;
+                }
+                @media (max-width: 991px) {
+                    font-size: 10px;
+                    padding: 2px;
+                }
+                @media (max-width: 600px) {
+                    font-size: 8px;
+                }
+                @media (max-width: 460px) {
+                    font-size: 6px;
+                }
+                @media (max-width: 350px) {
+                    font-size: 5px;
+                }
+            }
+        }
+        tbody {
+            td {
+                font-family: Lato;
+                font-size: 13px;
+                line-height: 1.23;
+                color: #69666c;
+                overflow: hidden;
+                @media (max-width: 991px) {
+                    font-size: 10px;
+                }
+                @media (max-width: 600px) {
+                    font-size: 8px;
+                }
+                @media (max-width: 460px) {
+                    font-size: 6px;
+                }
+                @media (max-width: 350px) {
+                    font-size: 5px;
+                }
+            }
+        }
+    }
+    &__bottom-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 81px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            &--results {
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+// .long-text {
+//     width: 130px;
+//     transition: 0.2s width linear;
+//    &:hover {
+//         transition: 0.2s width linear;
+//         width: 200px;
+//     }
+// }
+// td:hover {
+//     pointer-events: none;
+// }

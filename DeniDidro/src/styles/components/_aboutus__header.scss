@@ -1,0 +1,11 @@
+.aboutus__header {
+    background-image: url('../../assets/images/about_header.png');
+    height: 370px;
+}
+@media (max-width: 768px) {
+    .aboutus__header {
+        width: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}

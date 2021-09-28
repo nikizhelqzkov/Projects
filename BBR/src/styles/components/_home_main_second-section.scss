@@ -1,0 +1,175 @@
+.home__main__section--second {
+    
+    padding: 0 12rem;
+    margin-top: 15.2rem;
+    @media (max-width: 1500px) {
+        margin-top: 5rem;
+    }
+    @media (max-width: 991px) {
+        padding: 0 2rem;
+    }
+    @media (max-width: 500px) {
+        padding: 0 1rem;
+    }
+    @media (max-width: 300px) {
+        padding: 0 0.5rem;
+    }
+    &__left {
+        &--text {
+            @media(max-width:991px) and (min-width:500px){
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            h2 {
+                font-family: Merriweather;
+                font-size: 49px;
+                font-weight: bold;
+                line-height: 1.24;
+                color: #2f2f2f;
+                margin-bottom: 0;
+                @media (max-width: 991px) {
+                    font-size: 30px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 25px;
+                }
+                @media (max-width: 500px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 300px) {
+                    font-size: 18px;
+                }
+            }
+            p {
+                margin-top: 22px;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 1.38;
+                color: #312f33;
+            }
+        }
+        &--selection {
+            display: flex;
+            margin-bottom: 250px;
+            @media (max-width: 991px) {
+                margin-bottom: 50px;
+                flex-direction: column;
+                align-items: center;
+            }
+            &--button {
+                margin-left: 1rem;
+                width: 50%;
+                @media (max-width: 991px) {
+                    width: 70%;
+                    margin-left: 0;
+                }
+                a {
+                    width: 100%;
+                    text-align: center;
+                    @media (max-width: 991px) {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    &__right {
+        &--inner {
+            margin-left: 5.31rem;
+            @media (max-width: 1300px) {
+                margin-left: 1rem;
+            }
+            @media (max-width: 991px) {
+                margin-left: 0;
+                margin-bottom: 150px;
+            }
+            img {
+                max-width: 100%;
+                @media (max-width: 1200px) and (min-width: 991px) {
+                    max-width: 150%;
+                    display: block;
+                    margin: auto;
+                }
+                @media (max-width: 991px) {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+.selector {
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    width: 370px;
+    position: relative;
+    @media (max-width: 991px) {
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    @media (max-width: 550px) {
+        width: 100%;
+    }
+    &__home {
+        padding: 17px 24.8px 17px 20px;
+        position: relative;
+        &::after {
+            content: url('../../assets/images/arrow_bottom.svg');
+            position: absolute;
+            right: 5.5%;
+            transition: all 0.5s;
+            z-index: 1;
+        }
+        &__open {
+            &::after {
+                content: url('../../assets/images/arrow_bottom.svg');
+                position: absolute;
+                right: 5.5%;
+                transition: all 0.5s;
+                z-index: 1;
+                transform: rotate(180deg);
+            }
+        }
+        span {
+            opacity: 0.52;
+            font-size: 18px;
+            line-height: 1.22;
+            color: #69666c;
+            cursor: default;
+        }
+    }
+    &__body {
+        display: none;
+        &__open {
+            display: block;
+        }
+        &__list {
+            margin-top: 0px;
+            overflow: auto;
+            height: 280px;
+            background-color: #f4f4f4;
+            padding-left: 0;
+            list-style: none;
+
+            &__items {
+                border-top: 1px solid rgba(112, 112, 112, 0.2);
+
+                span {
+                    display: block;
+                    line-height: 1.19;
+                    color: #2f2f2f;
+                    font-size: 16px;
+                    padding-left: 20px;
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                }
+                &:hover {
+                    background-color: rgba(217, 217, 217, 0.45);
+                }
+            }
+        }
+    }
+}

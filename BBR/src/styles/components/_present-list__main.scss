@@ -1,0 +1,12 @@
+.present-list__body {
+    margin-top: 120px;
+
+    @media (max-width: 768px) {
+        margin-top: 3rem;
+    }
+    &__card--text {
+        h5 {
+            font-size: 21px !important;
+        }
+    }
+}

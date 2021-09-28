@@ -1,0 +1,149 @@
+.credit-form__main {
+    input:invalid {
+        border: solid 5px #ed6464;
+    }
+    &--submit {
+        border: 0px;
+    }
+    &--first {
+        height: 500px;
+        width: 100%;
+        @media (max-width: 768px) {
+            height: 200px;
+        }
+        @media (max-width: 300px) {
+            height: 300px;
+        }
+    }
+    &--more-space {
+        @media (max-width: 991px) {
+            margin-top: 5rem;
+        }
+    }
+    &--more-space.second {
+        @media (max-width: 768px) {
+            margin-top: 0rem;
+        }
+    }
+    &__form {
+        position: relative;
+        z-index: 3;
+        &__inner__steps {
+            &--err {
+                display: none;
+                float: right;
+                position: relative;
+                z-index: 5;
+                margin-top: -4rem;
+                margin-right: 20px;
+                background-color: #f4f4f4;
+                z-index: auto;
+                img {
+                    height: auto;
+                }
+                span {
+                    position: absolute;
+                    left: calc(50% - 95px);
+                    bottom: -80px;
+                    font-size: 12px;
+                    padding: 15px 12px;
+                    min-width: 180px;
+                    border-radius: 7px;
+                    color: #eb1f1f;
+                    background-color: #ffff;
+                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                    z-index: 10;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        z-index: 11;
+                        top: -5px;
+                        left: 50%;
+                        transform: rotate(45deg);
+                        width: 10px;
+                        height: 10px;
+                        background-color: #ffff;
+                        box-shadow: -3px -3px 8px 0 rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+            &--headers {
+                position: relative;
+                margin-top: 100px;
+                padding-bottom: 100px;
+                span {
+                    font-family: Lato;
+                    font-size: 90px;
+                    font-weight: 800;
+                    line-height: 1.2;
+                    color: #f4f4f4;
+                    position: absolute;
+                    top: -30%;
+
+                    z-index: 0;
+                }
+                h3 {
+                    position: absolute;
+                    z-index: 1;
+                    margin-left: 30px;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        &--check {
+            display: flex;
+            align-items: center;
+            input[type='checkbox'] {
+                min-width: 20px;
+                min-height: 20px;
+                @media (max-width: 400px) {
+                    min-width: 10px;
+                    min-height: 10px;
+                }
+            }
+        }
+    }
+    &--button--add {
+        width: 100%;
+        padding: 16px 16px 15.2px 16px;
+        text-align: center;
+        border-radius: 7px;
+        border: solid 1px #b1afb2;
+        background: transparent;
+        color: #b1afb2;
+        cursor: pointer;
+        img {
+            margin-right: 1rem;
+        }
+        &:hover {
+            background-color: rgb(214, 209, 209);
+            color: #fff;
+        }
+        &.rem {
+            display: none;
+            border: none;
+            margin-top: 1rem;
+            color: #ed6464;
+            &:hover {
+                border: 1px solid #b1afb2;
+                color: #ec4d4d;
+                background-color: rgb(214, 209, 209);
+            }
+        }
+    }
+}
+
+.form--hidden {
+    display: none;
+}
+
+input.errorState:not(:focus) {
+    &::placeholder {
+        color: #ed6464;
+        opacity: 1;
+    }
+    & + .credit-form__main__form__inner__steps--err {
+        display: block;
+    }
+}

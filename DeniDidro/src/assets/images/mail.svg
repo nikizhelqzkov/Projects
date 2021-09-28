@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="115" viewBox="0 0 115 115">
+    <defs>
+        <filter id="Rectangle_868" width="115" height="115" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="7.5"/>
+            <feFlood flood-color="#004f95" flood-opacity=".361"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_65" transform="translate(22.5 19.229)">
+        <g filter="url(#Rectangle_868)" transform="translate(-22.5 -19.23)">
+            <rect id="Rectangle_868-2" width="70" height="70" fill="#004f95" rx="15" transform="translate(22.5 19.5)"/>
+        </g>
+        <g id="email" transform="translate(20.675 20.982)">
+            <g id="Group_62" transform="translate(1.651)">
+                <path id="Path_5349" d="M27.991 10.138L25.4 8.414V4.828a.555.555 0 0 0-.555-.555h-5.653l-4.018-2.68a.555.555 0 0 0-.616 0l-4.018 2.68H4.882a.555.555 0 0 0-.555.555v3.586l-2.586 1.724A1.688 1.688 0 0 0 1 11.522v16.046a1.664 1.664 0 0 0 1.664 1.664h24.4a1.664 1.664 0 0 0 1.664-1.664V11.522a1.687 1.687 0 0 0-.737-1.384zm-.812.791L25.4 12.111V9.746zM14.866 2.72L17.2 4.273h-4.663zm9.429 2.662v7.468l-9.429 6.287-9.429-6.286V5.382zM4.328 12.111l-1.775-1.182 1.775-1.183zm22.74 16.012H2.664a.555.555 0 0 1-.555-.555v-15.6l12.449 8.3a.555.555 0 0 0 .616 0l12.449-8.3v15.6a.555.555 0 0 1-.555.555z" class="cls-2" transform="translate(-1 -1.5)"/>
+                <path id="Path_5350" d="M12.555 13.609h14.42a.555.555 0 0 0 0-1.109h-14.42a.555.555 0 0 0 0 1.109z" class="cls-2" transform="translate(-5.899 -6.399)"/>
+                <path id="Path_5351" d="M12.555 19.609h14.42a.555.555 0 0 0 0-1.109h-14.42a.555.555 0 1 0 0 1.109z" class="cls-2" transform="translate(-5.899 -9.071)"/>
+            </g>
+            <path id="Path_5373" fill="#084f95" d="M0 2.068s1.572-.676 1.242.909 1.19-1.388 1.19-1.388-1.422.6-.977-1.1S0 2.068 0 2.068z" transform="rotate(-42 29.972 11.505)"/>
+        </g>
+    </g>
+</svg>

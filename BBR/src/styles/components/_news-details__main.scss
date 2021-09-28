@@ -1,0 +1,86 @@
+.news-details {
+    &__main {
+        .news-list__main--first-section {
+            height: 260px;
+        }
+        &--header {
+            padding-top: 1rem;
+        }
+        &--breadcrumb {
+            margin-left: 0;
+        }
+    }
+    &__body {
+        padding: 1rem 12rem;
+        @media (max-width: 1200px) {
+            padding: 1rem 6rem;
+        }
+        @media (max-width: 997px) {
+            padding: 1rem 5rem;
+        }
+        @media (max-width: 768px) {
+            padding: 1rem 3rem;
+        }
+        @media (max-width: 500px) {
+            padding: 1rem 2rem;
+        }
+        @media (max-width: 400px) {
+            padding: 1rem 1rem;
+        }
+        @media (max-width: 400px) {
+            padding: 0;
+        }
+        &--text {
+            margin-top: 1rem;
+            p {
+                font-family: Lato;
+                line-height: 1.38;
+                color: #2f2f2f;
+            }
+        }
+        &--links {
+            margin-top: 7.31rem;
+            &__items {
+                border-radius: 7px;
+                background-color: #f4f4f4;
+                padding: 1.57rem;
+                margin-bottom: 1.57rem;
+                display: flex;
+                align-items: center;
+                &--img {
+                    margin-right: 1rem;
+                }
+                @media (max-width: 768px) {
+                    padding: 1rem;
+                }
+
+                a {
+                    font-family: Lato;
+                    font-size: 17px;
+                    line-height: 1.41;
+                    color: #2f2f2f;
+                    &:hover {
+                        text-decoration: none;
+                        color: #006daa;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &--gallery {
+            img {
+                border-radius: 20px;
+            }
+            margin-top: 11.25rem;
+            &__main {
+                img {
+                    width: 100%;
+                    border-radius: 7px;
+                }
+                margin-bottom: 2.94rem;
+            }
+        }
+    }
+}

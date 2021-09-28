@@ -1,0 +1,86 @@
+.contacts__main__cards {
+    padding: 0 11rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 991px) {
+        padding: 0 5rem;
+    }
+    @media (max-width: 768px) {
+        padding: 0 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 500px) {
+        padding: 0 2rem;
+    }
+    @media (max-width: 400px) {
+        padding: 0 1rem;
+    }
+    &__card {
+        width: 40%;
+        border-radius: 7px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        padding: 36px 43px;
+        min-height: 412px;
+        @media (max-width: 1200px) {
+            width: 45%;
+        }
+        @media (max-width: 768px) {
+            padding: 20px 25px;
+            width: 100%;
+            margin-top: 3rem;
+        }
+        @media (max-width: 500px) {
+            padding: 10px 16px;
+            width: 100%;
+        }
+        @media (max-width: 400px) {
+            padding: 8px 12px;
+            width: 100%;
+        }
+        @media (max-width: 400px) {
+            padding: 5px 8px;
+            width: 100%;
+        }
+        &__header {
+            text-indent: 12px;
+            h3 {
+                font-family: Lato;
+                font-size: 27px;
+                line-height: 1.22;
+                color: #2f2f2f;
+            }
+            @media (max-width: 1200px) {
+                text-indent: 0;
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+        &__main {
+            margin-top: 2.32rem;
+            &__item {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                &--img {
+                    padding: 13px 16.2px 14.2px 17px;
+                    border-radius: 7px;
+                    background-color: #f4f4f4;
+                }
+                &--text {
+                    margin-left: 1rem;
+                    h6 {
+                        font-family: Lato;
+                        font-size: 16px;
+                        font-weight: normal;
+                        line-height: 1.38;
+                        color: #312f33;
+                    }
+                }
+            }
+        }
+    }
+}

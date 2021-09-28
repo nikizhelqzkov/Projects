@@ -1,0 +1,100 @@
+.register-second__main__info {
+    position: relative;
+    table {
+        @media (max-width: 1300px) {
+            margin-left: -5rem;
+        }
+
+        @media (max-width: 991px) {
+            margin-left: -3rem;
+        }
+        @media (max-width: 800px) {
+            margin-left: -2rem;
+        }
+        @media (max-width: 400px) {
+            margin-left: -1rem;
+        }
+        th {
+            @media (max-width: 1300px) {
+                font-size: 10px;
+                padding: 4px 6px;
+            }
+            @media (max-width: 700px) {
+                padding: 1px;
+            }
+        }
+        td,
+        th {
+            @media (max-width: 800px) {
+                font-size: 8px;
+            }
+            @media (max-width: 700px) {
+                font-size: 6px;
+            }
+            @media (max-width: 600px) {
+                font-size: 5px;
+            }
+            @media (max-width: 400px) {
+                font-size: 4px;
+                padding: 0;
+            }
+        }
+        .green {
+            color: #65d076;
+        }
+        .orange {
+            color: #efa51a;
+        }
+    }
+
+    .long-text {
+        .popup {
+            $width: 163px;
+            width: $width;
+            background-image: url(../../assets/images/register-popup.svg);
+            background-size: 100%;
+            position: absolute;
+            top: 10px;
+            left: -76px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: fit-content;
+            padding: 15px;
+            z-index: 5;
+            p {
+                font-family: Lato;
+                font-size: 12px;
+                line-height: 1.25;
+                color: #67656c;
+            }
+        }
+        img {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+        }
+        position: relative;
+        width: 130px;
+        transition: 0.2s width linear;
+        &:hover {
+            transition: 0.2s width linear;
+            width: 400px;
+        }
+        div.small-td {
+            max-height: 3rem;
+            padding: 0 10px;
+            overflow: hidden;
+            :hover{
+                pointer-events: none;
+            }
+        }
+    }
+    td:hover,
+    .small-td:hover {
+        pointer-events: none;
+    }
+    th,
+    td {
+        width: 120px;
+    }
+}

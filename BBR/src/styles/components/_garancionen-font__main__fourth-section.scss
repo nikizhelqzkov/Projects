@@ -1,0 +1,42 @@
+.g-f__ft-s {
+    &__left {
+        .inner {
+            position: relative;
+            max-width: 100%;
+            width: 70%;
+            display: inline-block;
+            @media (max-width: 1400px) {
+                display: block;
+                margin: auto;
+                width: 80%;
+            }
+            @media (max-width: 700px) {
+                width: 98%;
+            }
+            
+            .main-photo {
+                width: 100%;
+            }
+            .play-btn {
+                cursor: pointer;
+                position: absolute;
+                left: 45%;
+                top: 45%;
+                display: inline-block;
+                padding: 17px 31.8px 16.3px 41px;
+                border-radius: 7px;
+                background-color: #028793;
+                width: auto;
+                &:hover {
+                    background-color: #074179;
+                }
+                @media (max-width: 600px) {
+                    padding: 10px 25px 10px 32px;
+                }
+                @media (max-width: 400px) {
+                    padding: 10px 15px 10px 22px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.gf__nav {
+    &__right__list__items {
+        a {
+            &:hover {
+                color: #028793;
+                &::after {
+                    content: '';
+                    border-left: 40px solid #028793 !important;
+                }
+            }
+        }
+        &--button {
+            a {
+                background-color: #028793 !important;
+                &:hover {
+                    background-color: rgb(7, 65, 121) !important;
+                }
+            }
+        }
+    }
+
+    &--mobile__list--menu {
+        background-color: #028793;
+    }
+}

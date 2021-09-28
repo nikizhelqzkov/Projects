@@ -1,0 +1,12 @@
+.gf__header {
+    &__image {
+        &::after {
+            content: '';
+            background-image: url(../../assets/images/garancionen-fond--tumbnail.jpg);
+            background-size: cover;
+        }
+    }
+    &--button{
+        background-color: #028793;
+    }
+}

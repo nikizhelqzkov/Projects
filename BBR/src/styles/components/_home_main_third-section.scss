@@ -1,0 +1,130 @@
+.home__main__section--third {
+    height: 614px;
+    position: relative;
+    width: 100%;
+    margin-top: 200px;
+    @media(max-width:997px){
+        margin-top: 0;
+    }
+    margin-bottom: 2rem;
+    z-index: 1;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../assets/images/big-house-jumbotron.png');
+        filter: brightness(85%);
+        width: 100%;
+        height: 614px;
+        // left: 0;
+        background-position: center;
+        // background-size: 100% 100%;
+        background-repeat: no-repeat;
+        top: 0;
+        z-index: -2;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #006daa;
+        opacity: 0.7;
+        width: 100%;
+        height: 614px;
+    }
+    &__header {
+        padding-top: 3.81rem;
+        margin: auto;
+        h3,
+        p {
+            padding: 0 12rem;
+            color: #fff;
+            text-align: center;
+            @media (max-width: 991px) {
+                padding: 0 5rem;
+            }
+            @media (max-width: 400px){
+                padding: 0 2rem;
+            }
+        }
+        h3 {
+            font-family: Merriweather;
+            font-size: 49px;
+            font-weight: bold;
+            line-height: 1.24;
+            @media (max-width: 910px) {
+                font-size: 1.625rem;
+            }
+            @media (max-width: 400px){
+                font-size:1.4rem;
+            }
+        }
+        p {
+            margin-top: 22px;
+            font-family: Lato;
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 1.38;
+            @media (max-width: 400px){
+                font-size: .8rem;
+            }
+        }
+    }
+    &__main {
+        &__list {
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            @media (max-width: 991px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-row: repeat(2, 1fr);
+                align-items: center;
+            }
+            &--item {
+                padding: 100px 30px;
+                &:not(:first-child) {
+                    border-left: 1px solid #fff;
+                }
+                @media (max-width: 991px) {
+                    padding: 10px 10px;
+                    &:not(:first-child) {
+                        border-left: 0;
+                    }
+                }
+            }
+        }
+        h4,
+        h5 {
+            color: #fff;
+            text-align: center;
+        }
+        h4 {
+            font-family: Lato;
+            font-size: 75px;
+            font-weight: bold;
+            line-height: 1.2;
+            @media (max-width: 991px) {
+                font-size: 1.75rem;
+            }
+            @media (max-width: 400px){
+                font-size: 1.375rem;
+            }
+        }
+        h5 {
+            font-family: Lato;
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 1.2;
+            width: 80%;
+            margin: auto;
+            @media (max-width: 991px) {
+                font-size: 1.25rem;
+                width: 90%;
+            }
+            @media (max-width: 400px){
+                font-size: 1rem;
+            }
+        }
+    }
+}

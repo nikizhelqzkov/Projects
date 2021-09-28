@@ -1,0 +1,82 @@
+.footer {
+    &__main {
+        &__left {
+            margin-top: 30px;
+        }
+        &__right {
+            margin-top: 40px;
+            display: flex;
+            &__list {
+                display: block;
+                list-style-type: none;
+            }
+            &--first {
+                margin-right: 10px;
+            }
+        }
+    }
+    &__copyright {
+        padding: 9px 0;
+        background-color: #d40e15;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h5 {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.81;
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    a {
+        color: #252525;
+        padding: 0;
+        &:hover {
+            color: #252525;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer__main {
+        padding: 0;
+        justify-content: center;
+        &__left {
+            ul {
+                display: flex;
+                flex-direction: column;
+                padding-left: 0;
+                li {
+                    padding: 0;
+                    margin: 0;
+                    width: 80%;
+                    margin: 0 auto;
+                    img {
+                        width: 50%;
+                        margin: 10px auto;
+                    }
+                    img[alt='School logo'] {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &__right {
+            display: block;
+        }
+        a {
+            color: #252525;
+            padding: 0;
+            &:hover {
+                color: #252525;
+                text-decoration: none;
+                opacity: 0.7;
+            }
+        }
+    }
+}

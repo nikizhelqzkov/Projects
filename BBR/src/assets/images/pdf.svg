@@ -1,0 +1,23 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 56" width="47" height="56">
+	<title>pdf-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #c4c3c3;stroke-width: 0.2 } 
+		.shp1 { fill: #c4c3c3 } 
+		.shp2 { fill: #f34336 } 
+		.shp3 { fill: #a23027 } 
+		.txt4 { font-size: 7px;fill: #ffffff;font-weight: 400;font-family: "DayPosterBlack", "DayPosterBlack" } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="shp0" d="M32.18 0.6L43.05 11.47L43.05 52.6L3.78 52.6L3.78 0.6L32.18 0.6Z" />
+		</g>
+		<path id="Layer" class="shp1" d="M43.05 11.47L32.17 11.47L32.17 0.6L43.05 11.47Z" />
+		<path id="text" class="shp2" d="M46.7 43.79L0 43.83L0 30.64L46.7 30.6L46.7 43.79Z" />
+		<path id="Layer" class="shp3" d="M3.78 47.33L3.78 43.55L0 43.55L3.78 47.33Z" />
+		<text id="P D F  " style="transform: matrix(1,-0.013,0.013,1,11.934,32.154)" >
+			<tspan x="1.262" y="7.819" class="txt4">P</tspan><tspan  y="7.819" class="txt4"> </tspan><tspan  y="7.819" class="txt4">D</tspan><tspan  y="7.819" class="txt4"> </tspan><tspan  y="7.819" class="txt4">F</tspan><tspan  y="7.819" class="txt4">
+</tspan>
+		</text>
+	</g>
+</svg>

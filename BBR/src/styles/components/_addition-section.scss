@@ -1,0 +1,144 @@
+.additional-info {
+    position: fixed;
+    right: 0;
+    top: calc(50% - 165px);
+    width: 350px;
+    height: 330px;
+    margin-right: -250px;
+    background-color: #006daa;
+    border-radius: 7px 0 0 7px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: right 0.7s;
+    cursor: pointer;
+    z-index: 20;
+    @media (max-width: 997px) {
+        display: none;
+        margin-right: -300px;
+    }
+
+    &__items {
+        background-color: #006daa;
+        position: relative;
+        padding: 23.4px 10px 28.9px 25.2px;
+        margin-left: 0;
+        transition: margin-left 0.5s ease-in-out;
+        display: block;
+        &--img {
+            margin-right: 20px;
+            width: 50px;
+        }
+        &--text {
+            color: #fff;
+        }
+        &__popup {
+            &--arrow {
+                display: none;
+                position: absolute;
+                right: 103%;
+                top: 30%;
+                height: 40px;
+                width: 40px;
+                background-color: #006daa;
+                clip-path: polygon(0 10%, 0 90%, 100% 50%);
+            }
+            &__main {
+                position: absolute;
+                display: none;
+                top: 0;
+                right: 110%;
+                padding: 18px 22px;
+                min-height: 330px;
+                width: 450px;
+                border-radius: 7px;
+                color: #ffff;
+                background-color: #006daa;
+                box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+                transform: translateY(-50%);
+                z-index: 100;
+                cursor: default;
+                &--nav {
+                    margin-bottom: 20px;
+                    padding-left: 0;
+                    list-style-type: none;
+                    &--items {
+                        display: inline-block;
+                        margin-right: 30px;
+                        padding: 2px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        opacity: 0.78;
+                        cursor: pointer;
+                    }
+                    &--items.selected {
+                        color: #fff;
+                        opacity: 1;
+                        text-decoration: underline;
+                    }
+                }
+                &--table {
+                    table {
+                        border-collapse: collapse;
+                        border-style: hidden;
+                        border-radius: 7px;
+                        width: 100%;
+                        text-align: center;
+                        box-shadow: 0 0 0 1px #f4f4f4;
+                    }
+                    tr {
+                        border-collapse: collapse;
+                        border-bottom: 1px solid #f4f4f4;
+                        height: 40px;
+                        th:last-child,
+                        td:last-child {
+                            border-left: 2px solid #f4f4f4;
+                        }
+                        td {
+                            opacity: 0.78;
+                        }
+                    }
+                }
+                &--table {
+                    display: none;
+                }
+                &--table.selected {
+                    display: block;
+                }
+            }
+            // &__main.open,&--arrow.open{
+            //     display: block;
+            // }
+        }
+    }
+    &__items:hover {
+        transition: margin-left 0.5s ease-in-out;
+        margin-left: -150px;
+        &--text {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__items:not(:last-of-type) {
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid #fff;
+            transition: left 0.4s ease-in-out;
+            bottom: 0;
+        }
+    }
+}
+.additional-info__items.open .additional-info__items__popup__main {
+    display: block;
+}
+.additional-info__items.open .additional-info__items__popup--arrow {
+    display: block;
+}
+
+#additional--currency tr {
+    th:first-child,
+    td:first-child {
+        border-right: 2px solid #f4f4f4;
+    }
+}

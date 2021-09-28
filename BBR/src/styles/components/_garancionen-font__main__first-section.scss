@@ -1,0 +1,29 @@
+.gf__main__f-s{
+    margin-top: -100px;
+    &__calculators{
+        &__calculator{
+            &__nav{
+                &__list{
+                    &__items{
+                        &.active-tab{
+                            color: #028793;
+                            &::after {
+                                content: '';
+                                
+                                background-color: #028793;
+                                border-bottom: 1.5px solid #006daa;
+                            }
+                        }
+                        &:hover{
+                            color: #028793;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__button{
+        background-color: #028793;
+    }
+}

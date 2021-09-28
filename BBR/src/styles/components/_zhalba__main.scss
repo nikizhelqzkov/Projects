@@ -1,0 +1,84 @@
+.zhalba__main {
+    &--section {
+        height: 471px !important;
+        @media(max-width:768px){
+            height: 200px !important;
+        }
+    }
+}
+.zhalba__form {
+    position: relative;
+    z-index: 2;
+    &__inner {
+        &__uploader {
+            margin-left: 0 !important;
+            width: 100%;
+            border-radius: 7px;
+            border: solid 1px #b1afb2;
+            border-style: dashed;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 220px;
+            cursor: pointer;
+            margin-bottom: 3rem;
+            span {
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 1.19;
+                color: #69666c;
+                margin-top: 1rem;
+            }
+        }
+        &__files {
+            margin-bottom: 3rem;
+            h4 {
+                opacity: 0.52;
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 1.19;
+                color: #69666c;
+                margin-bottom: 1.875rem;
+            }
+            &__inner {
+                display: flex;
+                position: relative;
+                margin-top: 19px;
+                border-radius: 7px;
+                background-color: #f4f4f4;
+                padding: 26px;
+                .tick{
+                    display: none;
+                    position: absolute;
+                    top: 33%;
+                    right: 2%;
+                }
+                .tick.success{
+                    display: inline-block;
+                    @media(max-width: 280px){
+                        display: none;
+                    }
+                }
+                &__item {
+                    align-items: center;
+                    display: flex;
+                    width: 95%;
+                    img {
+                        margin-right: 1rem;
+                    }
+                    &--info {
+                        width: 100%;
+                        .progressor {
+                            display: block;
+                            width: 100%;
+                            padding-top: 0px;
+                            border-radius: 10px;
+                            height: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
